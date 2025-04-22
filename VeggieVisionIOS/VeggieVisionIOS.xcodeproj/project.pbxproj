@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4D033ECF87208F20EA35526D /* Pods_VeggieVisionIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB081D533A69F87D75361F4F /* Pods_VeggieVisionIOSTests.framework */; };
+		7046B4DD9107843A49239CA5 /* Pods_VeggieVisionIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3EADF59893D44A99EFEDBC /* Pods_VeggieVisionIOS.framework */; };
+		D94343B114D9941610E37150 /* Pods_VeggieVisionIOS_VeggieVisionIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7699C9CF4547A264E0D8F975 /* Pods_VeggieVisionIOS_VeggieVisionIOSUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		10DB51802DB4AAE3008DF305 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		057B4E85F0EB662510874A8C /* Pods-VeggieVisionIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeggieVisionIOSTests.release.xcconfig"; path = "Target Support Files/Pods-VeggieVisionIOSTests/Pods-VeggieVisionIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		07EC5C45A3ED96EBBA491515 /* Pods-VeggieVisionIOS-VeggieVisionIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeggieVisionIOS-VeggieVisionIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-VeggieVisionIOS-VeggieVisionIOSUITests/Pods-VeggieVisionIOS-VeggieVisionIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		10BFDC842DB6D1C000B0EFEF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		10DB516E2DB4AAE1008DF305 /* VeggieVisionIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeggieVisionIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DB517F2DB4AAE3008DF305 /* VeggieVisionIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeggieVisionIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DB51892DB4AAE3008DF305 /* VeggieVisionIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeggieVisionIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3EADF59893D44A99EFEDBC /* Pods_VeggieVisionIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeggieVisionIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1ECB5A917D559BD109E144 /* Pods-VeggieVisionIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeggieVisionIOS.release.xcconfig"; path = "Target Support Files/Pods-VeggieVisionIOS/Pods-VeggieVisionIOS.release.xcconfig"; sourceTree = "<group>"; };
+		7699C9CF4547A264E0D8F975 /* Pods_VeggieVisionIOS_VeggieVisionIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeggieVisionIOS_VeggieVisionIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884E575073F2BA5F297F9AA5 /* Pods-VeggieVisionIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeggieVisionIOS.debug.xcconfig"; path = "Target Support Files/Pods-VeggieVisionIOS/Pods-VeggieVisionIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB081D533A69F87D75361F4F /* Pods_VeggieVisionIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeggieVisionIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BD7C66E8C7F7E6858D939E /* Pods-VeggieVisionIOS-VeggieVisionIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeggieVisionIOS-VeggieVisionIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-VeggieVisionIOS-VeggieVisionIOSUITests/Pods-VeggieVisionIOS-VeggieVisionIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9B5DFE01A6B40987888A687 /* Pods-VeggieVisionIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeggieVisionIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-VeggieVisionIOSTests/Pods-VeggieVisionIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7046B4DD9107843A49239CA5 /* Pods_VeggieVisionIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D033ECF87208F20EA35526D /* Pods_VeggieVisionIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +84,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94343B114D9941610E37150 /* Pods_VeggieVisionIOS_VeggieVisionIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07F3E3F6F081346D7743853B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				884E575073F2BA5F297F9AA5 /* Pods-VeggieVisionIOS.debug.xcconfig */,
+				4C1ECB5A917D559BD109E144 /* Pods-VeggieVisionIOS.release.xcconfig */,
+				07EC5C45A3ED96EBBA491515 /* Pods-VeggieVisionIOS-VeggieVisionIOSUITests.debug.xcconfig */,
+				B2BD7C66E8C7F7E6858D939E /* Pods-VeggieVisionIOS-VeggieVisionIOSUITests.release.xcconfig */,
+				F9B5DFE01A6B40987888A687 /* Pods-VeggieVisionIOSTests.debug.xcconfig */,
+				057B4E85F0EB662510874A8C /* Pods-VeggieVisionIOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		10BFDCA42DB6D1C000B0EFEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		10DB51652DB4AAE1008DF305 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +118,8 @@
 				10DB51822DB4AAE3008DF305 /* VeggieVisionIOSTests */,
 				10DB518C2DB4AAE3008DF305 /* VeggieVisionIOSUITests */,
 				10DB516F2DB4AAE1008DF305 /* Products */,
+				07F3E3F6F081346D7743853B /* Pods */,
+				CB7E91B88597AF571AE25E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +133,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CB7E91B88597AF571AE25E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C3EADF59893D44A99EFEDBC /* Pods_VeggieVisionIOS.framework */,
+				7699C9CF4547A264E0D8F975 /* Pods_VeggieVisionIOS_VeggieVisionIOSUITests.framework */,
+				AB081D533A69F87D75361F4F /* Pods_VeggieVisionIOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DB51932DB4AAE3008DF305 /* Build configuration list for PBXNativeTarget "VeggieVisionIOS" */;
 			buildPhases = (
+				8EB1CE6D76C0EB886C5DB270 /* [CP] Check Pods Manifest.lock */,
 				10DB516A2DB4AAE1008DF305 /* Sources */,
 				10DB516B2DB4AAE1008DF305 /* Frameworks */,
 				10DB516C2DB4AAE1008DF305 /* Resources */,
@@ -111,8 +163,6 @@
 				10DB51702DB4AAE1008DF305 /* VeggieVisionIOS */,
 			);
 			name = VeggieVisionIOS;
-			packageProductDependencies = (
-			);
 			productName = VeggieVisionIOS;
 			productReference = 10DB516E2DB4AAE1008DF305 /* VeggieVisionIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DB51962DB4AAE3008DF305 /* Build configuration list for PBXNativeTarget "VeggieVisionIOSTests" */;
 			buildPhases = (
+				304613444C29A268222C615E /* [CP] Check Pods Manifest.lock */,
 				10DB517B2DB4AAE3008DF305 /* Sources */,
 				10DB517C2DB4AAE3008DF305 /* Frameworks */,
 				10DB517D2DB4AAE3008DF305 /* Resources */,
@@ -134,8 +185,6 @@
 				10DB51822DB4AAE3008DF305 /* VeggieVisionIOSTests */,
 			);
 			name = VeggieVisionIOSTests;
-			packageProductDependencies = (
-			);
 			productName = VeggieVisionIOSTests;
 			productReference = 10DB517F2DB4AAE3008DF305 /* VeggieVisionIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DB51992DB4AAE3008DF305 /* Build configuration list for PBXNativeTarget "VeggieVisionIOSUITests" */;
 			buildPhases = (
+				BC74E6314BF751A729F1F57A /* [CP] Check Pods Manifest.lock */,
 				10DB51852DB4AAE3008DF305 /* Sources */,
 				10DB51862DB4AAE3008DF305 /* Frameworks */,
 				10DB51872DB4AAE3008DF305 /* Resources */,
@@ -157,8 +207,6 @@
 				10DB518C2DB4AAE3008DF305 /* VeggieVisionIOSUITests */,
 			);
 			name = VeggieVisionIOSUITests;
-			packageProductDependencies = (
-			);
 			productName = VeggieVisionIOSUITests;
 			productReference = 10DB51892DB4AAE3008DF305 /* VeggieVisionIOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -198,6 +246,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 10DB516F2DB4AAE1008DF305 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 10BFDCA42DB6D1C000B0EFEF /* Products */;
+					ProjectRef = 10BFDC842DB6D1C000B0EFEF /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				10DB516D2DB4AAE1008DF305 /* VeggieVisionIOS */,
@@ -230,6 +284,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304613444C29A268222C615E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeggieVisionIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EB1CE6D76C0EB886C5DB270 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeggieVisionIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC74E6314BF751A729F1F57A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeggieVisionIOS-VeggieVisionIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10DB516A2DB4AAE1008DF305 /* Sources */ = {
@@ -303,6 +426,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -364,6 +488,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -385,15 +510,20 @@
 		};
 		10DB51942DB4AAE3008DF305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884E575073F2BA5F297F9AA5 /* Pods-VeggieVisionIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = VeggieVisionIOS/VeggieVisionIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"VeggieVisionIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = N2C9PVBT7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to access your photos";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -422,15 +552,20 @@
 		};
 		10DB51952DB4AAE3008DF305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1ECB5A917D559BD109E144 /* Pods-VeggieVisionIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = VeggieVisionIOS/VeggieVisionIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"VeggieVisionIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = N2C9PVBT7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to access your photos";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -459,10 +594,12 @@
 		};
 		10DB51972DB4AAE3008DF305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B5DFE01A6B40987888A687 /* Pods-VeggieVisionIOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -481,10 +618,12 @@
 		};
 		10DB51982DB4AAE3008DF305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057B4E85F0EB662510874A8C /* Pods-VeggieVisionIOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -503,9 +642,11 @@
 		};
 		10DB519A2DB4AAE3008DF305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EC5C45A3ED96EBBA491515 /* Pods-VeggieVisionIOS-VeggieVisionIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -524,9 +665,11 @@
 		};
 		10DB519B2DB4AAE3008DF305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2BD7C66E8C7F7E6858D939E /* Pods-VeggieVisionIOS-VeggieVisionIOSUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;

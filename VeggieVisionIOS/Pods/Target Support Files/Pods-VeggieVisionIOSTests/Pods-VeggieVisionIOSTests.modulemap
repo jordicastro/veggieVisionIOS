@@ -1,0 +1,6 @@
+framework module Pods_VeggieVisionIOSTests {
+  umbrella header "Pods-VeggieVisionIOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

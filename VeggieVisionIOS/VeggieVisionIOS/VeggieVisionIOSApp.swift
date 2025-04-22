@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct VeggieVisionIOSApp: App {
+    @StateObject var inferenceState = InferenceState()
     var body: some Scene {
         WindowGroup {
             LaunchScreen()
+                .environmentObject(inferenceState)
         }
     }
 }

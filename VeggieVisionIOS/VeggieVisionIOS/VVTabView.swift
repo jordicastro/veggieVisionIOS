@@ -15,18 +15,19 @@ struct VVTabView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            scanView()
+            ScanView()
                 .tabItem {
                     Image(systemName: "camera.aperture")
                     Text("Scan")
                 }
-            cartView()
+            CartView()
                 .tabItem {
                     Image(systemName: "cart")
                     Text("Cart")
                 }
         }
         .accentColor(Color.veggieSecondary)
+    
     }
 }
 

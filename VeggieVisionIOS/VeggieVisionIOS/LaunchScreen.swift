@@ -9,9 +9,11 @@ import SwiftUI
 
 struct LaunchScreen: View {
     @State private var showTabView: Bool = false
+    @EnvironmentObject var inferenceState: InferenceState
     var body: some View {
         if showTabView {
             VVTabView()
+                .environmentObject(inferenceState)
         } else {
             VStack {
                 Spacer()
@@ -43,4 +45,5 @@ struct LaunchScreen: View {
 
 #Preview {
     LaunchScreen()
+        .environmentObject(InferenceState())
 }

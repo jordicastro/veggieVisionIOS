@@ -1,0 +1,15 @@
+platform :ios, '13.0'
+source 'https://github.com/CocoaPods/Specs.git'
+target 'VeggieVisionIOS' do
+  use_frameworks!
+
+  pod 'onnxruntime-objc', '~> 1.17.0'
+
+  target 'VeggieVisionIOSTests' do
+    inherit! :search_paths
+  end
+
+  target 'VeggieVisionIOSUITests' do
+  end
+
+end

@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct HomeView: View {
     var body: some View {
-        Text("Home!")
+        NavigationStack {
+            ZStack {
+                CameraPreview()
+            }
+            .navigationBarHidden(true)
+        }
     }
 }
+
 
 #Preview {
     HomeView()
