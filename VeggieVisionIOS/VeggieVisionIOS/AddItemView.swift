@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddItemView: View {
     @EnvironmentObject var inferenceState: InferenceState
+    @Environment(\.presentationMode) var presentationMode
     @State private var selectedItem = "Broccoli" // Default selected
 
     // Computed properties instead of let inside body
@@ -28,7 +29,7 @@ struct AddItemView: View {
                     .font(.title2).bold()
                     .foregroundColor(.veggiePrimary)
                     .padding(.leading, 24)
-                    .padding(.top, 24)
+                    .padding(.top, 32)
                 Spacer()
             }
             .padding(.top, 20)
@@ -37,7 +38,7 @@ struct AddItemView: View {
             VStack {
                 Text(topGuess.emoji)
                     .font(.system(size: 80))
-                Text(topGuess.label)
+                Text(clean(topGuess.label))
                     .font(.title3)
                     .foregroundColor(.darkOrLightText)
                     .bold()
@@ -74,7 +75,7 @@ struct AddItemView: View {
                                 VStack(spacing: 1) {
                                     Text(item.emoji)
                                         .font(.largeTitle)
-                                    Text(item.label)
+                                    Text(clean(item.label))
                                         .font(.caption2)
                                         .lineLimit(1)
                                         .minimumScaleFactor(0.5)
@@ -98,6 +99,9 @@ struct AddItemView: View {
             VStack(spacing: 24) {
                 Button(action: {
                     print("Adding: \(selectedItem)")
+                    // redirect back to scanner, toast selectedItem
+                    inferenceState.triggerToast(with: selectedItem)
+                    presentationMode.wrappedValue.dismiss()
                     // TODO: Add selectedItem to cart
                 }) {
                     Text("+ Add")
@@ -134,6 +138,20 @@ struct AddItemView: View {
             inferenceState.freeze()
         }
     }
+}
+
+func clean(_ label: String) -> String {
+    var result = label
+    
+    if result.hasPrefix("bagged_") {
+        result = String(result.dropFirst("bagged_".count))
+    }
+    
+    result = result.replacingOccurrences(of: "_", with: " ")
+    
+    result = result.capitalized
+    
+    return result
 }
 
 

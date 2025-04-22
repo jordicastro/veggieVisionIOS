@@ -156,4 +156,14 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         super.viewDidLayoutSubviews()
         previewLayer?.frame = view.bounds
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("✅ viewWillAppear — CameraViewController is active again")
+
+        // Resume the camera or inference here if needed
+        if !inferenceState.isPaused {
+            isInferencing = true
+        }
+    }
 }

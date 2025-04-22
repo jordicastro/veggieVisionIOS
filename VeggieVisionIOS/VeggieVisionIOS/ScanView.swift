@@ -42,14 +42,25 @@ struct ScanView: View {
                 }
             }
             .navigationBarHidden(true)
+            .overlay(
+                Group {
+                    if inferenceState.showToast, let item = inferenceState.selectedItem {
+                        Text("✅ \(clean(item)) added to cart")
+                            .padding()
+                            .background(Color.black.opacity(0.8))
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                            .transition(.move(edge: .top).combined(with: .opacity))
+                            .padding(.top, 60)
+                    }
+                }
+            )
+            .animation(.easeInOut, value: inferenceState.showToast)
+            .navigationBarHidden(true)
         }
-//        .onAppear {
-//            inferenceState.unfreeze()
-//            inferenceState.clearGuesses()
-//            print("UNFROZEN SCAN, CLEARED GUESSES: ", inferenceState.topGuesses.isEmpty)
-//        }
     }
 }
+
 
 
 #Preview {

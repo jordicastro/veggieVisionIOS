@@ -18,6 +18,8 @@ struct Inference: Identifiable {
 class InferenceState: ObservableObject {
     @Published var topGuesses: [Inference] = []
     @Published var isPaused: Bool = false
+    @Published var selectedItem: String? = nil
+    @Published var showToast: Bool = false
     
     func freeze() {
         isPaused = true
@@ -33,5 +35,13 @@ class InferenceState: ObservableObject {
     }
     func clearGuesses() {
             self.topGuesses = []
+    }
+    func triggerToast(with item: String) {
+        selectedItem = item
+        showToast = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.showToast = false
+            self.selectedItem = nil
+        }
     }
 }
