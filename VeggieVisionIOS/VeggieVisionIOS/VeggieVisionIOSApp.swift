@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct VeggieVisionIOSApp: App {
     @StateObject var inferenceState = InferenceState()
+    @StateObject var cartState = CartState()
     var body: some Scene {
         WindowGroup {
             LaunchScreen()
                 .environmentObject(inferenceState)
+                .environmentObject(cartState)
         }
     }
 }

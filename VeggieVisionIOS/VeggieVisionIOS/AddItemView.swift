@@ -9,8 +9,9 @@ import SwiftUI
 
 struct AddItemView: View {
     @EnvironmentObject var inferenceState: InferenceState
+    @EnvironmentObject var cartState: CartState
     @Environment(\.presentationMode) var presentationMode
-    @State private var selectedItem = "Broccoli" // Default selected
+    @State private var selectedItemInfo: (label: String, emoji: String) = ("Broccoli", "🥦")
 
     // Computed properties instead of let inside body
     var topGuess: Inference {
@@ -51,12 +52,13 @@ struct AddItemView: View {
             .frame(maxWidth: .infinity)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(selectedItem == topGuess.label ? Color.accentColor : Color.gray.opacity(0.3), lineWidth: 5)
+                    .stroke(selectedItemInfo.label == topGuess.label ? Color.accentColor : Color.gray.opacity(0.3), lineWidth: 5)
             )
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .padding(.horizontal, 32)
             .onTapGesture {
-                selectedItem = topGuess.label
+                selectedItemInfo.label = topGuess.label
+                selectedItemInfo.emoji = topGuess.emoji
             }
 
             // Other Guesses
@@ -70,7 +72,9 @@ struct AddItemView: View {
                     HStack(spacing: 12) {
                         ForEach(otherGuesses) { item in
                             Button(action: {
-                                selectedItem = item.label
+                                selectedItemInfo.label = item.label
+                                selectedItemInfo.emoji = item.emoji
+                                
                             }) {
                                 VStack(spacing: 1) {
                                     Text(item.emoji)
@@ -79,12 +83,13 @@ struct AddItemView: View {
                                         .font(.caption2)
                                         .lineLimit(1)
                                         .minimumScaleFactor(0.5)
+                                        .foregroundColor(.darkOrLightText)
                                 }
                                 .frame(width: 90, height: 90)
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .stroke(selectedItem == item.label ? Color.accentColor : Color.gray.opacity(0.3), lineWidth: 2)
+                                        .stroke(selectedItemInfo.label == item.label ? Color.accentColor : Color.gray.opacity(0.3), lineWidth: 2)
                                 )
                             }
                         }
@@ -98,18 +103,21 @@ struct AddItemView: View {
             // Add Button + Manual
             VStack(spacing: 24) {
                 Button(action: {
-                    print("Adding: \(selectedItem)")
+                    print("selectedItemInfo ", selectedItemInfo)
+//                    print("selectedItemInfo.emoji ", selectedItemInfo.emoji)
                     // redirect back to scanner, toast selectedItem
-                    inferenceState.triggerToast(with: selectedItem)
+                    inferenceState.triggerToast(with: selectedItemInfo)
                     presentationMode.wrappedValue.dismiss()
-                    // TODO: Add selectedItem to cart
+                    
+                    cartState.addItem(label: selectedItemInfo.label, emoji: selectedItemInfo.emoji)
+                    cartState.showCartBadge = true
                 }) {
                     Text("+ Add")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color(red: 0.76, green: 0.88, blue: 0.53))
+                        .background(.veggieSecondary)
                         .cornerRadius(12)
                 }
                 .padding(.horizontal, 60)
@@ -158,4 +166,5 @@ func clean(_ label: String) -> String {
 #Preview {
     AddItemView()
         .environmentObject(InferenceState())
+        .environmentObject(CartState())
 }

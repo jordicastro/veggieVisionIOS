@@ -42,10 +42,10 @@ struct ScanView: View {
                 }
             }
             .navigationBarHidden(true)
-            .overlay(
+            .overlay( // Toast
                 Group {
-                    if inferenceState.showToast, let item = inferenceState.selectedItem {
-                        Text("✅ \(clean(item)) added to cart")
+                    if inferenceState.showToast, let item = inferenceState.selectedItemInfo {
+                        Text("✅ \(item.emoji) \(clean(item.label)) added to cart")
                             .padding()
                             .background(Color.black.opacity(0.8))
                             .foregroundColor(.white)
