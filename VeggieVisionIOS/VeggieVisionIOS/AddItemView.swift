@@ -142,7 +142,8 @@ struct AddItemView: View {
         }
         .ignoresSafeArea(edges: .bottom)
         .onAppear {
-            print("AddItemView appeared with top guess: ", inferenceState.topGuesses.first ?? "none")
+            print("on AddItemView appear, updating selectedItemInfo with LABEL: ", topGuess.label, " and EMOJI:", topGuess.emoji)
+            selectedItemInfo = (topGuess.label, topGuess.emoji)
             inferenceState.freeze()
         }
     }
